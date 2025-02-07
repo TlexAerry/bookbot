@@ -14,4 +14,11 @@ def main():
 
     print( "--- Begin report of books/frankenstein.txt ---")
     print(f"In books/frankenstein.txt there are a total of {num_words} words")
+    
+    for i in letter_dict:
+        letter = i
+        count = letter_dict[i]
+        if letter.isalpha() == True:
+            print(f"The '{letter}' character was found {count} times")
+    print("--- End Report ---")
 main()
